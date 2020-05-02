@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "HC Sanity Test Suite">
+   <test name = "HC Sanity Tests">
+      <classes>
+         <class name = "com.ibm.sanity.tests.Application_url_check_Test" />
+         <class name = "com.ibm.sanity.tests.LoginTest" />
+         <class name = "com.ibm.sanity.tests.HC_VIew_All_Test" />
+         <class name = "com.ibm.sanity.tests.HC_SAP_Rainbow_Test" />
+         <class name = "com.ibm.sanity.tests.HC_SAP_Phoenix_Test" />
+      </classes>
+   </test>
+</suite>	
