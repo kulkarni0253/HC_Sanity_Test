@@ -12,15 +12,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ibm.generics.ScreenShot;
-import com.ibm.pom.LoginPOM;
+import com.ibm.pom.NG_Metering_App_Login_POM;
 import com.ibm.utility.DriverFactory;
 import com.ibm.utility.DriverNames;
 
-public class LoginTest {
+public class NG_Metering_App_LoginTest {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	private String username;
+	private String password;
+	private NG_Metering_App_Login_POM loginPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -34,11 +36,12 @@ public class LoginTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver); 
+		loginPOM = new NG_Metering_App_Login_POM(driver); 
 		baseUrl = properties.getProperty("baseURL");
+		username = properties.getProperty("username");
+		password = properties.getProperty("password");
 		screenShot = new ScreenShot(driver); 
-		// open the browser 
-		driver.get(baseUrl);
+		driver.get(baseUrl);// open the browser 
 	}
 	
 	@AfterMethod
@@ -47,21 +50,19 @@ public class LoginTest {
 		driver.quit();
 	}
 	@Test
-	public void validLoginTest() {
+	public void NGMeteringApp_Login_Test() {
 		try{
-			loginPOM.sendUserName("hvbot@nationalgrid.co.uk");
-			loginPOM.sendPassword("HcBot@12345!@");
+			loginPOM.sendUserName(username);
+			loginPOM.sendPassword(password);
 			loginPOM.clickLoginBtn(); 
-			
 			Assert.assertEquals(loginPOM.welcome_page(), "Welcome HC!"); // validating 
 			System.out.println("***You have logged in successfully****");
-			
-			screenShot.captureScreenShot("First");	
+			screenShot.captureScreenShot("URL_Login_Success");	
 		}catch(Exception e){
 			e.printStackTrace();
 			System.out.println("***Your login functionality failed****");
-			
+			screenShot.captureScreenShot("URL_login_Failed");
+			Assert.assertTrue(false);
 		}
-		
 	}
 }
