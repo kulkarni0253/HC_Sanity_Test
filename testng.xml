@@ -6,13 +6,15 @@
 	<listeners>
 		<listener class-name="com.ibm.ExtentReportListener.ExtentReportListener" />
 	</listeners>
+	
    <test name = "NG Metering Application Sanity Test Cases">
       <classes>
          <class name = "com.ibm.sanity.tests.NG_Metering_App_URL_Test" />
          <class name = "com.ibm.sanity.tests.NG_Metering_App_LoginTest" />
-         <class name = "com.ibm.sanity.tests.NG_Metering_App_VIEW_ALL_Test" />
+         <class name = "com.ibm.sanity.tests.NG_Metering_App_DB_Connectivity_Test" /> 
          <class name = "com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test" />
-         <class name = "com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test" />
+         <class name = "com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test" /> 
+           <!-- comment syntax -->
       </classes>
    </test>
 </suite>	

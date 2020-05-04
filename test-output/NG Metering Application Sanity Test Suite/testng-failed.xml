@@ -14,14 +14,6 @@
           <include name="NGMeteringApp_SAPPhoenix_Test"/>
         </methods>
       </class> <!-- com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test -->
-      <class name="com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test">
-        <methods>
-          <include name="NGMeteringApp_SAPRainbow_Test"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="setUpBeforeClass"/>
-        </methods>
-      </class> <!-- com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test -->
     </classes>
   </test> <!-- NG Metering Application Sanity Test Cases(failed) -->
 </suite> <!-- Failed suite [NG Metering Application Sanity Test Suite] -->

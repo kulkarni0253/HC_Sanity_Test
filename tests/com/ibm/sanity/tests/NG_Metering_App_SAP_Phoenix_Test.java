@@ -66,7 +66,7 @@ public class NG_Metering_App_SAP_Phoenix_Test {
 			hC_SAP_Phoenix_POM.selectsuppliercode(supplier_code);
 			hC_SAP_Phoenix_POM.entermprn(mprn_phoenix);
 			hC_SAP_Phoenix_POM.clicksearch();
-			Assert.assertEquals(hC_SAP_Phoenix_POM.mfgserialnocheck(), "customInputText clsTextbox success-field");
+			Assert.assertEquals(hC_SAP_Phoenix_POM.mfgserialnocheck(), "customInputText clsTextbox success-field focus");
 			System.out.println("*******SUCCESS - SAP Phoenix works******");
 			screenShot.captureScreenShot("SAP_Phoenix_Connection_Success");
 		}catch(Exception e){

@@ -18,7 +18,7 @@ import com.ibm.pom.NG_Metering_App_VIEW_ALL_POM;
 import com.ibm.utility.DriverFactory;
 import com.ibm.utility.DriverNames;
 
-public class NG_Metering_App_VIEW_ALL_Test {
+public class NG_Metering_App_DB_Connectivity_Test {
 
 	private WebDriver driver;
 	private String baseUrl;

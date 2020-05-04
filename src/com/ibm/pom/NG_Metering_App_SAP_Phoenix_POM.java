@@ -84,6 +84,7 @@ public class NG_Metering_App_SAP_Phoenix_POM {
 		Actions actions = new Actions(driver);
 		actions.doubleClick(mfgserialno).perform();
 		mfgserialno.click();
+		entermprn.click();
 		Thread.sleep(10000);
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		mfgserialno = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".customInputText.clsTextbox.success-field"))); //customInputText clsTextbox success-field
