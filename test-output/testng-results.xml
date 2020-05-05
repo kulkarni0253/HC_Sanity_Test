@@ -1,101 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="NG Metering Application Sanity Test Suite" duration-ms="723782" started-at="2020-05-04T08:39:48Z" finished-at="2020-05-04T08:51:52Z">
+  <suite name="Default suite" duration-ms="104190" started-at="2020-05-05T05:39:01Z" finished-at="2020-05-05T05:40:45Z">
     <groups>
     </groups>
-    <test name="NG Metering Application Sanity Test Cases" duration-ms="723782" started-at="2020-05-04T08:39:48Z" finished-at="2020-05-04T08:51:52Z">
-      <class name="com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test@28d25987]" name="setUpBeforeClass" is-config="true" duration-ms="10" started-at="2020-05-04T14:19:40Z" finished-at="2020-05-04T14:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test@28d25987]" name="setUp" is-config="true" duration-ms="49130" started-at="2020-05-04T14:19:40Z" finished-at="2020-05-04T14:20:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NGMeteringApp_SAPPhoenix_Test()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test@28d25987]" name="NGMeteringApp_SAPPhoenix_Test" duration-ms="80248" started-at="2020-05-04T14:20:29Z" finished-at="2020-05-04T14:21:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NGMeteringApp_SAPPhoenix_Test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test@28d25987]" name="tearDown" is-config="true" duration-ms="2241" started-at="2020-05-04T14:21:50Z" finished-at="2020-05-04T14:21:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ibm.sanity.tests.NG_Metering_App_SAP_Phoenix_Test -->
+    <test name="Default test" duration-ms="104190" started-at="2020-05-05T05:39:01Z" finished-at="2020-05-05T05:40:45Z">
       <class name="com.ibm.sanity.tests.NG_Metering_App_URL_Test">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@14acaea5]" name="setUpBeforeClass" is-config="true" duration-ms="26" started-at="2020-05-04T14:09:48Z" finished-at="2020-05-04T14:09:48Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@46d56d67]" name="setUpBeforeClass" is-config="true" duration-ms="12" started-at="2020-05-05T11:09:01Z" finished-at="2020-05-05T11:09:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@14acaea5]" name="setUp" is-config="true" duration-ms="54533" started-at="2020-05-04T14:09:48Z" finished-at="2020-05-04T14:10:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@46d56d67]" name="setUp" is-config="true" duration-ms="87059" started-at="2020-05-05T11:09:01Z" finished-at="2020-05-05T11:10:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NGMeteringApp_url_Test()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@14acaea5]" name="NGMeteringApp_url_Test" duration-ms="11321" started-at="2020-05-04T14:10:43Z" finished-at="2020-05-04T14:10:54Z">
+        <test-method status="PASS" signature="NGMeteringApp_URL_Test()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@46d56d67]" name="NGMeteringApp_URL_Test" duration-ms="11195" started-at="2020-05-05T11:10:28Z" finished-at="2020-05-05T11:10:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NGMeteringApp_url_Test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@14acaea5]" name="tearDown" is-config="true" duration-ms="6056" started-at="2020-05-04T14:10:54Z" finished-at="2020-05-04T14:11:00Z">
+        </test-method> <!-- NGMeteringApp_URL_Test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_URL_Test@46d56d67]" name="tearDown" is-config="true" duration-ms="5895" started-at="2020-05-05T11:10:39Z" finished-at="2020-05-05T11:10:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ibm.sanity.tests.NG_Metering_App_URL_Test -->
-      <class name="com.ibm.sanity.tests.NG_Metering_App_VIEW_ALL_Test">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_VIEW_ALL_Test@d8355a8]" name="setUpBeforeClass" is-config="true" duration-ms="8" started-at="2020-05-04T14:14:08Z" finished-at="2020-05-04T14:14:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_VIEW_ALL_Test@d8355a8]" name="setUp" is-config="true" duration-ms="104964" started-at="2020-05-04T14:14:08Z" finished-at="2020-05-04T14:15:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NGMeteringApp_LoginTest()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_VIEW_ALL_Test@d8355a8]" name="NGMeteringApp_LoginTest" duration-ms="96025" started-at="2020-05-04T14:15:53Z" finished-at="2020-05-04T14:17:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NGMeteringApp_LoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_VIEW_ALL_Test@d8355a8]" name="tearDown" is-config="true" duration-ms="2944" started-at="2020-05-04T14:17:29Z" finished-at="2020-05-04T14:17:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ibm.sanity.tests.NG_Metering_App_VIEW_ALL_Test -->
-      <class name="com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test@59fa1d9b]" name="setUpBeforeClass" is-config="true" duration-ms="4" started-at="2020-05-04T14:17:32Z" finished-at="2020-05-04T14:17:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test@59fa1d9b]" name="setUp" is-config="true" duration-ms="43020" started-at="2020-05-04T14:17:32Z" finished-at="2020-05-04T14:18:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NGMeteringApp_SAPRainbow_Test()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test@59fa1d9b]" name="NGMeteringApp_SAPRainbow_Test" duration-ms="82320" started-at="2020-05-04T14:18:15Z" finished-at="2020-05-04T14:19:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NGMeteringApp_SAPRainbow_Test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test@59fa1d9b]" name="tearDown" is-config="true" duration-ms="2642" started-at="2020-05-04T14:19:38Z" finished-at="2020-05-04T14:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ibm.sanity.tests.NG_Metering_App_SAP_Rainbow_Test -->
-      <class name="com.ibm.sanity.tests.NG_Metering_App_LoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_LoginTest@46d56d67]" name="setUpBeforeClass" is-config="true" duration-ms="3" started-at="2020-05-04T14:11:00Z" finished-at="2020-05-04T14:11:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_LoginTest@46d56d67]" name="setUp" is-config="true" duration-ms="63382" started-at="2020-05-04T14:11:00Z" finished-at="2020-05-04T14:12:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="NGMeteringApp_Login_Test()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_LoginTest@46d56d67]" name="NGMeteringApp_Login_Test" duration-ms="122679" started-at="2020-05-04T14:12:03Z" finished-at="2020-05-04T14:14:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NGMeteringApp_Login_Test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ibm.sanity.tests.NG_Metering_App_LoginTest@46d56d67]" name="tearDown" is-config="true" duration-ms="2166" started-at="2020-05-04T14:14:06Z" finished-at="2020-05-04T14:14:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ibm.sanity.tests.NG_Metering_App_LoginTest -->
-    </test> <!-- NG Metering Application Sanity Test Cases -->
-  </suite> <!-- NG Metering Application Sanity Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

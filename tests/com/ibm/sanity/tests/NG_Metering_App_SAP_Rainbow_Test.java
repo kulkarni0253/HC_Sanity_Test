@@ -31,7 +31,7 @@ public class NG_Metering_App_SAP_Rainbow_Test {
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		FileInputStream inStream = new FileInputStream("C:\\NG_Metering_Application_Sanity_Test\\others.properties");
 		properties.load(inStream);
 	}
 

@@ -26,7 +26,8 @@ public class NG_Metering_App_URL_Test {
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		//FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		FileInputStream inStream = new FileInputStream("C:\\NG_Metering_Application_Sanity_Test\\others.properties");
 		properties.load(inStream);
 	}
 
@@ -46,7 +47,7 @@ public class NG_Metering_App_URL_Test {
 	}
 
 	@Test
-	public void NGMeteringApp_url_Test() throws InterruptedException {
+	public void NGMeteringApp_URL_Test() throws InterruptedException {
     	try {
 			Assert.assertEquals(application_url_check_POM.username_field(), ""); // validating 
 			screenShot.captureScreenShot("URL_Up_Screenshot"); //URL is up, screenshot captured

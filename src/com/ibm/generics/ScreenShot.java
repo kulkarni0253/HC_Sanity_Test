@@ -30,7 +30,7 @@ public class ScreenShot {
 	public void captureScreenShot(){
 		
 		// to be changed 
-		String path = "C:\\Users\\HarshalKulkarni\\Desktop\\screenshots\\";
+		String path = "C:\\screenshots";
 		String fileName ="";
 
 		GregorianCalendar calendar = new GregorianCalendar(); 
@@ -64,9 +64,9 @@ public class ScreenShot {
 	}
 	
 
-	public void captureScreenShot(String fileName){
+	public void captureScreenShot(String fileName1){
 		
-		String path =  "C:\\Users\\HarshalKulkarni\\Desktop\\screenshots\\";
+		String path =  "C:\\NG_Metering_Application_Sanity_Test\\screenshots\\";
 	
 		// 1. create file 
 		// 2. capture screenshot from selenium 
@@ -76,7 +76,17 @@ public class ScreenShot {
 			TakesScreenshot takeScreenShot  = (TakesScreenshot) driver; 
 			File file = takeScreenShot.getScreenshotAs(OutputType.FILE);
 			
-			FileUtils.copyFile(file, new File(path +fileName+".png"));
+			GregorianCalendar calendar = new GregorianCalendar(); 
+			
+			int date =  calendar.get(Calendar.DATE); 
+			int minute = calendar.get(Calendar.MINUTE);
+			int second = calendar.get(Calendar.SECOND); 
+			
+			
+			String fileName = fileName1 + "_" + new Integer(date).toString() + "-" + new Integer(minute).toString() +"-" +
+						new Integer(second).toString() +".png"; 
+			
+			FileUtils.copyFile(file, new File(path +fileName));
 		} catch (WebDriverException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

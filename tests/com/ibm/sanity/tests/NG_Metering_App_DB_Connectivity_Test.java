@@ -31,7 +31,7 @@ public class NG_Metering_App_DB_Connectivity_Test {
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
-		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		FileInputStream inStream = new FileInputStream("C:\\NG_Metering_Application_Sanity_Test\\others.properties");
 		properties.load(inStream);
 	}
 
@@ -52,7 +52,7 @@ public class NG_Metering_App_DB_Connectivity_Test {
 		driver.quit();
 	}
 	@Test
-	public void NGMeteringApp_LoginTest() {
+	public void NG_Metering_App_DBConnectivity_Test() {
 		try{
 			hC_VIew_All_POM.sendUserName(username);
 			hC_VIew_All_POM.sendPassword(password);
@@ -63,11 +63,11 @@ public class NG_Metering_App_DB_Connectivity_Test {
 			hC_VIew_All_POM.selectjobtypeInstall();
 			hC_VIew_All_POM.clickgo();
 			Assert.assertEquals(hC_VIew_All_POM.viewallmprntext(), "Export");
-			System.out.println("******View All Functionaliy is working as expected*******");
+			System.out.println("******DB Connectivity is working as expected*******");
 			screenShot.captureScreenShot("DB_Connection_Success");
 		}catch(Exception e){
 			e.printStackTrace();
-			System.out.println("***View All Functionality is NOT working as expected****");
+			System.out.println("***DB Connectivity is NOT working as expected****");
 			screenShot.captureScreenShot("DB_Connection_Failed");
 			Assert.assertTrue(false);
 		}
